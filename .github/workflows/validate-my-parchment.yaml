@@ -9,4 +9,6 @@ jobs:
     - uses: actions/checkout@master
     - uses: Hmerac/kubeval-action@1.0
       with:
-        params: 'manifests/*'
+        command: |
+          echo "Running kubeval"
+          kubeval -d manifests --strict
