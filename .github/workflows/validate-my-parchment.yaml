@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: Hmerac/kubeval-action@1.0
+    - uses: Hmerac/kubeval-action@1.1
       with:
         command: |
           echo "Running kubeval"
